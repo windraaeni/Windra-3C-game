@@ -3,3 +3,8 @@
 
 # Ada Library Information
 *.ali
+/Library
+/Logs
+/Temp
+.vsconfig
+*.sln
