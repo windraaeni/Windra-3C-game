@@ -45,13 +45,24 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody _rigidbody;
     [SerializeField]
     private float _climbSpeed;
+    [SerializeField]
+    private Transform _cameraTransform;
+    [SerializeField]
+    private CameraManager _CameraManager;
+    [SerializeField]
+    private Animator _animator;
+
 
     private void CheckStep()
     {
         bool isHitLowerStep = Physics.Raycast(_groundDetector.position,transform.forward,_stepCheckerDistance);
         bool isHitUpperStep = Physics.Raycast(_groundDetector.position +_upperStepOffset,transform.forward,_stepCheckerDistance);
-        if (isHitLowerStep && !isHitUpperStep)
+        if (isHitLowerStep)
         {
+            if(!isHitUpperStep)
+            {
+
+            }
             _rigidbody.AddForce(0, _stepForce, 0);
         }
     }
@@ -60,7 +71,9 @@ public class PlayerMovement : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody>();
         _speed = _walkSpeed;
+        _animator = GetComponent<Animator>();
         _playerstances = PlayerStances.Stand;
+        HideAndLockCursor();
     }
     private void Start()
     {
@@ -69,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
         _input.OnJumpInput += Jump;
         _input.OnClimbInput += StartClimb;
         _input.OnCancelClimb += CancelClimb;
+        _CameraManager.OnChangePerspective += ChangePerspective;
     }
     private void OnDestroy()
     {
@@ -77,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
         _input.OnJumpInput += Jump;
         _input.OnClimbInput += StartClimb;
         _input.OnCancelClimb += CancelClimb;
+        _CameraManager.OnChangePerspective += ChangePerspective;
 
     }
     private void Update()
@@ -84,6 +99,13 @@ public class PlayerMovement : MonoBehaviour
         CheckIsGrounded();
         CheckStep();
     }
+
+    private void HideAndLockCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+    
     private void Move(Vector2 axisDirection)
     {
         Vector3 movementDirection = Vector3.zero;
@@ -91,15 +113,36 @@ public class PlayerMovement : MonoBehaviour
         bool isPlayerClimbing = _playerstances == PlayerStances.Climb;
         if (isPlayerStanding)
         {
-            if (axisDirection.magnitude >= 0.1)
+            switch (_CameraManager.CameraState)
             {
-                float rotationAngle = Mathf.Atan2(axisDirection.x, axisDirection.y) * Mathf.Rad2Deg;
-                float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, rotationAngle, ref _rotationSmoothVelocity, _rotationSmoothTime);
-                transform.rotation = Quaternion.Euler(0f, smoothAngle, 0f);
-                movementDirection = Quaternion.Euler(0f, rotationAngle, 0f) * Vector3.forward;
-                _rigidbody.AddForce(movementDirection * Time.deltaTime * _speed);
+                case CameraState.ThirdPerson:
+                    if (axisDirection.magnitude >= 0.1)
+                    {
+                        float rotationAngle = Mathf.Atan2(axisDirection.x, axisDirection.y) * Mathf.Rad2Deg + _cameraTransform.eulerAngles.y;
+                        float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, rotationAngle, ref _rotationSmoothVelocity, _rotationSmoothTime);
+                        transform.rotation = Quaternion.Euler(0f, smoothAngle, 0f);
+                        movementDirection = Quaternion.Euler(0f, rotationAngle, 0f) * Vector3.forward;
+                        _rigidbody.AddForce(movementDirection * Time.deltaTime * _speed);
+                    }
+                    break;
+                case CameraState.FirstPerson:
+                    transform.rotation = Quaternion.Euler(0f, _cameraTransform.eulerAngles.y, 0f);
+                    Vector3 horizontalDirection = axisDirection.x * transform.right;
+                    Vector3 verticalDirection = axisDirection.y * transform.forward;
+                    movementDirection = horizontalDirection + verticalDirection;
+                    _rigidbody.AddForce(movementDirection * _speed * Time.deltaTime);
+                    break;
+                default:
+                    break;
             }
-        }else if(isPlayerClimbing){
+            Vector3 velocity = new Vector3(_rigidbody.velocity.x, 0, _rigidbody.velocity.z);
+            _animator.SetFloat("Velocity", velocity.magnitude * axisDirection.magnitude);
+            _animator.SetFloat("VelocityZ", velocity.magnitude * axisDirection.y);
+            _animator.SetFloat("VelocityX", velocity.magnitude * axisDirection.x);
+
+
+        }
+        else if(isPlayerClimbing){
             Vector3 horizontal = axisDirection.x * transform.right;
             Vector3 vertical = axisDirection.y * transform.up;
             movementDirection = horizontal + vertical;
@@ -129,11 +172,13 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 jumpDirection = Vector3.up;
             _rigidbody.AddForce(jumpDirection * _jumpForce * Time.deltaTime);
+            _animator.SetTrigger("Jump");
         }
     }
     private void CheckIsGrounded()
     {
         _isGrounded = Physics.CheckSphere(_groundDetector.position, _detectorRadius, _groundLayer);
+        _animator.SetBool("IsGrounded", _isGrounded);
     }
     private void StartClimb()
     {
@@ -146,6 +191,8 @@ public class PlayerMovement : MonoBehaviour
             _playerstances = PlayerStances.Climb;
             _rigidbody.useGravity = false;
             _speed = _climbSpeed;
+            _CameraManager.SetFPSClampedCamera(true, transform.rotation.eulerAngles);
+            _CameraManager.SetTPSFieldOfView(70);
         }
     }
     private void CancelClimb()
@@ -156,6 +203,12 @@ public class PlayerMovement : MonoBehaviour
             _rigidbody.useGravity = true;
             transform.position -= transform.forward;
             _speed = _walkSpeed;
+            _CameraManager.SetFPSClampedCamera(false, transform.rotation.eulerAngles);
+            _CameraManager.SetTPSFieldOfView(40);
         }
+    }
+    private void ChangePerspective()
+    {
+        _animator.SetTrigger("ChangePerspective");
     }
 }
