@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\game\\script\\input\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\input\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\game\\script\\camera\\cameramanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\camera\\cameramanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\game\\script\\camera\\camerastate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\camera\\camerastate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\game\\script\\input\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\input\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\game\\script\\player\\playerstances.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\player\\playerstances.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,39 +40,14 @@
               "RelativeDocumentMoniker": "Assets\\Game\\Script\\Player\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Player\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Game\\Script\\Player\\PlayerMovement.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAuwDMAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAADoBAAAAAAAAAAAQwEkBAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-01T09:37:04.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InputManager.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Input\\InputManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Script\\Input\\InputManager.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Input\\InputManager.cs",
-              "RelativeToolTip": "Assets\\Game\\Script\\Input\\InputManager.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAAwFcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T01:45:25.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CameraManager.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Camera\\CameraManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Script\\Camera\\CameraManager.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Camera\\CameraManager.cs",
-              "RelativeToolTip": "Assets\\Game\\Script\\Camera\\CameraManager.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBsAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T12:19:24.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "CameraState.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Camera\\CameraState.cs",
               "RelativeDocumentMoniker": "Assets\\Game\\Script\\Camera\\CameraState.cs",
@@ -76,7 +55,47 @@
               "RelativeToolTip": "Assets\\Game\\Script\\Camera\\CameraState.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwAMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T12:16:59.881Z"
+              "WhenOpened": "2025-09-01T12:16:59.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraManager.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Camera\\CameraManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Script\\Camera\\CameraManager.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Camera\\CameraManager.cs",
+              "RelativeToolTip": "Assets\\Game\\Script\\Camera\\CameraManager.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAADEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T12:19:24.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InputManager.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Input\\InputManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Script\\Input\\InputManager.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Input\\InputManager.cs",
+              "RelativeToolTip": "Assets\\Game\\Script\\Input\\InputManager.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAJAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T01:45:25.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerStances.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Player\\PlayerStances.cs",
+              "RelativeDocumentMoniker": "Assets\\Game\\Script\\Player\\PlayerStances.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Player\\PlayerStances.cs",
+              "RelativeToolTip": "Assets\\Game\\Script\\Player\\PlayerStances.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T11:08:29.987Z",
+              "EditorCaption": ""
             }
           ]
         }
