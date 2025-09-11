@@ -77,6 +77,8 @@ public class PlayerMovement : MonoBehaviour
     private float _hitDetectorRadius;
     [SerializeField]
     private LayerMask _hitLayer;
+    [SerializeField]
+    private PlayerAudioManager _playerAudioManager;
 
 
     private void CheckStep()
@@ -85,9 +87,12 @@ public class PlayerMovement : MonoBehaviour
         bool isHitUpperStep = Physics.Raycast(_groundDetector.position +_upperStepOffset,transform.forward,_stepCheckerDistance);
         if (isHitLowerStep)
         {
-            if(!isHitUpperStep)
+            if (isHitLowerStep)
             {
-
+                if (!isHitUpperStep)
+                {
+                    _rigidbody.AddForce(0, _stepForce, 0);
+                }
             }
             _rigidbody.AddForce(0, _stepForce, 0);
         }
@@ -281,7 +286,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(_playerstances == PlayerStances.Crouch)
         {
-            _playerstances= PlayerStances.Crouch;
+            _playerstances= PlayerStances.Stand;
             _animator.SetBool("IsCrouch", false);
             _speed = _walkSpeed;
             _collider.height = 1.8f;
@@ -307,6 +312,7 @@ public class PlayerMovement : MonoBehaviour
             _playerstances = PlayerStances.Glide;
             _animator.SetBool("IsGliding", true);
             _CameraManager.SetFPSClampedCamera(true, transform.rotation.eulerAngles);
+            _playerAudioManager.PlayGlideSfx();
         }
     }
     private void CancelGlide()
@@ -316,6 +322,7 @@ public class PlayerMovement : MonoBehaviour
             _playerstances = PlayerStances.Stand;
             _animator.SetBool("IsGliding", false);
             _CameraManager.SetFPSClampedCamera(false, transform.rotation.eulerAngles);
+            _playerAudioManager.StopGlideSfx();
         }
     }
     private void Punch()
