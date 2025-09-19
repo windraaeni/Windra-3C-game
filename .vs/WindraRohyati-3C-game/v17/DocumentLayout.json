@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|c:\\users\\lenovo\\documents\\github\\windrarohyati-3c-game\\assets\\game\\script\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|c:\\users\\lenovo\\documents\\github\\windrarohyati-3c-game\\assets\\basic\\script\\input\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\basic\\script\\input\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\game\\script\\mainmenu\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\mainmenu\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|c:\\users\\lenovo\\documents\\github\\windrarohyati-3c-game\\assets\\basic\\script\\camera\\cameramanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\basic\\script\\camera\\cameramanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\game\\script\\gameplay\\gameplaymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\gameplay\\gameplaymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\basic\\script\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\basic\\script\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\game\\script\\input\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\input\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\game\\script\\player\\playeraudiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\game\\script\\player\\playeraudiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\assets\\basic\\script\\player\\playeraudiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9086EB82-A576-7678-4863-DA85A186065A}|Assembly-CSharp.csproj|solutionrelative:assets\\basic\\script\\player\\playeraudiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainMenuManager.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\MainMenu\\MainMenuManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Script\\MainMenu\\MainMenuManager.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\MainMenu\\MainMenuManager.cs",
-              "RelativeToolTip": "Assets\\Game\\Script\\MainMenu\\MainMenuManager.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T04:58:23.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InputManager.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Input\\InputManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Script\\Input\\InputManager.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Input\\InputManager.cs",
-              "RelativeToolTip": "Assets\\Game\\Script\\Input\\InputManager.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAYwJ0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T13:36:45.899Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Player\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Script\\Player\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Player\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Game\\Script\\Player\\PlayerMovement.cs",
-              "ViewState": "AgIAAAQBAAAAAAAAAAAmwCABAAAvAAAAAAAAAA==",
+              "Title": "InputManager.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Basic\\Script\\Input\\InputManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Basic\\Script\\Input\\InputManager.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Basic\\Script\\Input\\InputManager.cs",
+              "RelativeToolTip": "Assets\\Basic\\Script\\Input\\InputManager.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T12:37:04.319Z",
+              "WhenOpened": "2025-09-18T13:02:25.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GamePlayManager.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\GamePlay\\GamePlayManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Script\\GamePlay\\GamePlayManager.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\GamePlay\\GamePlayManager.cs",
-              "RelativeToolTip": "Assets\\Game\\Script\\GamePlay\\GamePlayManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CameraManager.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Basic\\Script\\Camera\\CameraManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Basic\\Script\\Camera\\CameraManager.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Basic\\Script\\Camera\\CameraManager.cs",
+              "RelativeToolTip": "Assets\\Basic\\Script\\Camera\\CameraManager.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T05:16:11.929Z"
+              "WhenOpened": "2025-09-17T13:08:31.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "PlayerAudioManager.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Player\\PlayerAudioManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Game\\Script\\Player\\PlayerAudioManager.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Game\\Script\\Player\\PlayerAudioManager.cs",
-              "RelativeToolTip": "Assets\\Game\\Script\\Player\\PlayerAudioManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAANAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Basic\\Script\\Player\\PlayerAudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Basic\\Script\\Player\\PlayerAudioManager.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Basic\\Script\\Player\\PlayerAudioManager.cs",
+              "RelativeToolTip": "Assets\\Basic\\Script\\Player\\PlayerAudioManager.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwBUAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T12:43:26.591Z"
+              "WhenOpened": "2025-09-17T12:45:46.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Basic\\Script\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Basic\\Script\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\WindraRohyati-3C-game\\Assets\\Basic\\Script\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Basic\\Script\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAADwv7QAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T10:37:49.522Z"
             }
           ]
         }
